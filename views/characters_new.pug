@@ -1,0 +1,10 @@
+extends partials/header
+block content
+  header
+    h1(class="page-title") Add your favorite character
+    a(class="header-link back-link" href="/characters") Go back
+  form(class="new-form" action="/characters" method="POST")
+    input(type="text" placeholder="first name" name="firstName" autocomplete="off")
+    input(type="text" placeholder="last name" name="lastName" autocomplete="off")
+    input(type="text" placeholder="weapon" name="weapon" autocomplete="off")
+    button(class="new-submit" type="submit") Submit

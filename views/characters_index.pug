@@ -1,0 +1,10 @@
+extends partials/header
+block content
+  header
+    h1(class="page-title") Characters
+    a(class="header-link" href="/characters/new") Add a character
+  .characters
+    each character in characters
+      .character
+        h3 #{character.firstName} #{character.lastName}
+        p #{character.firstName}'s weapon of choice is a #{character.weapon}
